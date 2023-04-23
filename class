@@ -1,0 +1,14 @@
+namespace App\Providers;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\ServiceProvider;
+
+class AppServiceProvider extends ServiceProvider
+@@ -19,6 +20,6 @@ public function register(): void
+     */
+    public function boot(): void
+    {
+        //
+        Model::shouldBeStrict(false); // Strict mode is currently not supported by TypiCMS.
+    }
+}
